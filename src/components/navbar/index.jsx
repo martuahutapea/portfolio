@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./styles.scss";
 import { FaBars, FaReact } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HiX } from "react-icons/hi";
@@ -35,12 +36,12 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar">
-        <div className="navbar__container">
+        <div className="navbar_container">
           <Link to={"/"} className="navbar_container_logo">
             <FaReact size={30} />
           </Link>
         </div>
-        <ul className="navbar_container_menu">
+        <ul className={`navbar_container_menu ${toggleIcon ? "active" : ""}`}>
           {data.map((item, key) => (
             <li key={key} className="navbar_container_menu_item">
               <Link className="navbar_container_menu_item_link" to={item.to}>

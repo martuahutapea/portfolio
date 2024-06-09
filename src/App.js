@@ -1,9 +1,32 @@
 import "./App.css";
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Contact from "./pages/contact";
+import Projects from "./pages/projects";
+import Resume from "./pages/resume";
+import Skills from "./pages/skills";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      {/* Particles Js */}
+
+      {/* Navbar */}
+
+      {/* Main Page */}
+      <Routes>
+        <Route index path="/" element={<Home />} />
+        <Route path="./pages/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/skills" element={<Skills />} />
+        {/* <Route path="/about" element={<About />} /> */}
+      </Routes>
+    </div>
+  );
 }
 
 export default App;

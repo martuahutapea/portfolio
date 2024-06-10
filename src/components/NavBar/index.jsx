@@ -1,0 +1,66 @@
+import React, { useState } from "react";
+import { FaBars, FaReact } from "react-icons/fa";
+import { HiX } from "react-icons/hi";
+import { Link } from "react-router-dom";
+
+const data = [
+  {
+    label: "Home",
+    to: "/",
+  },
+  {
+    label: "About",
+    to: "/about",
+  },
+  {
+    label: "Projects",
+    to: "/projects",
+  },
+  {
+    label: "Skills",
+    to: "/skills",
+  },
+  {
+    label: "Resume",
+    to: "/resume",
+  },
+  {
+    label: "Contact",
+    to: "/contact",
+  },
+];
+
+const NavBar = () => {
+  const [toggleIcon, setToggleIcon] = useState(false);
+
+  const handleIcon = () => {
+    setToggleIcon(!toggleIcon);
+  };
+
+  return (
+    <div>
+      <nav className="navbar">
+        <div className="navbar__pages">
+          <Link to={"/"} className="navbar__logo">
+            <FaReact size={30} />
+          </Link>
+        </div>
+        <ul className="nabar__menu">
+          {data.map((item, key) => (
+            <li key={key} className="navbar__menu__item">
+              <Link className="navbar__menu__item__links" to={item.to}>
+                {item.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {/* Create Humberger for phone view */}
+        <div className="navbar_icon" onClick={handleIcon}>
+          {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
+        </div>
+      </nav>
+    </div>
+  );
+};
+
+export default NavBar;

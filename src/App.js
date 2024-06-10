@@ -7,6 +7,7 @@ import Contact from "./pages/contact";
 import Projects from "./pages/projects";
 import Resume from "./pages/resume";
 import Skills from "./pages/skills";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
       {/* Particles Js */}
 
       {/* Navbar */}
+      <NavBar />
 
       {/* Main Page */}
       <Routes>
         <Route index path="/" element={<Home />} />
-        <Route path="./about" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/resume" element={<Resume />} />

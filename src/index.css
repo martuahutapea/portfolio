@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  background-color: var(--background-color-landing);
+  background-color: var(--text-color);
   height: 100%;
 }
 

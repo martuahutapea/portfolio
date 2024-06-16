@@ -11,13 +11,14 @@
     align-items: center;
     width: 100%;
     height: inherit;
-    padding: 0px 20px;
+    padding: 0px 10px;
     flex: 1;
   }
 
   &__logo {
     color: var(--text-color-option-1);
     cursor: pointer;
+    margin-left: 20px;
   }
 
   &__menu {
@@ -27,8 +28,8 @@
 
     &__item {
       line-height: 40px;
-      margin-right: 1.5rem;
-      font-size: 1rem;
+      margin-right: 1rem;
+      font-size: 1.2rem;
 
       &::after {
         content: "";

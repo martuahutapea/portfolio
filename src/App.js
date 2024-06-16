@@ -10,16 +10,19 @@ import Skills from "./pages/skills";
 import NavBar from "./components/NavBar";
 import NotFound from "./pages/notFound.jsx";
 import LandingPage from "./pages/index.jsx";
+import Footer from "./components/Footer/index.jsx";
 
 function App() {
   const [showNavBar, setShowNavBar] = useState(localStorage.getItem("showNavBar") === "true");
   const [userName, setUserName] = useState(localStorage.getItem("userName") || "");
+  const [showFooter, setShowFooter] = useState(localStorage.getItem("showFooter") === "true");
 
   const handleShowNavBar = (name) => {
     setShowNavBar(true);
     setUserName(name);
     localStorage.setItem("showNavBar", "true");
     localStorage.setItem("userName", name);
+    localStorage.setItem("showFooter", "true");
   };
 
   const location = useLocation();
@@ -28,10 +31,13 @@ function App() {
     if (location.pathname === "/") {
       setShowNavBar(false);
       setUserName("");
+      setShowFooter(false);
       localStorage.removeItem("showNavBar");
       localStorage.removeItem("userName");
+      localStorage.removeItem("showFooter");
     }
   }, [location.pathname]);
+
   return (
     <div className="App">
       {/* Particles Js */}
@@ -50,6 +56,8 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      {/* Footer */}
+      {showFooter && <Footer />}
     </div>
   );
 }

@@ -26,7 +26,7 @@ const LandingPage = ({ onShowNavBar }) => {
     <div className="landing-container">
       <ParticlesBackground />
       <h1 className="landing-title">
-        <ReactTyped strings={["Hey, I'm Martua Hutapea, a web developer.<br />Let's create something amazing together!"]} typeSpeed={40} backSpeed={30} loop />
+        <ReactTyped strings={["Hey, I'm Martua Hutapea, I'm a web developer.<br />Let's create something amazing together!"]} typeSpeed={40} backSpeed={30} loop />
       </h1>
       <form onSubmit={handleSubmit} className="landing-form">
         <input type="text" placeholder="Enter your name" value={name} onChange={handleInputChange} className="landing-input" aria-label="Name input" />

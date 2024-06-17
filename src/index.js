@@ -7,9 +7,11 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+const base = process.env.NODE_ENV === "development" ? "/" : "/portfolio/";
+
 root.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={base}>
       <App />
     </Router>
   </React.StrictMode>

@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.App__main-page-content {
+  flex: 1; // This will make the main content take up the remaining space
+}
+
+.App__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0; // Adjust as needed
+}

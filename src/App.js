@@ -1,11 +1,11 @@
-import "./App.css";
+import "./App.scss";
 import React, { useState, useEffect } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import Home from "./pages/home";
 import About from "./pages/about";
 import Contact from "./pages/contact";
 import Projects from "./pages/projects";
-import Resume from "./pages/resume";
+// import Resume from "./pages/resume";
 import Skills from "./pages/skills";
 import NavBar from "./components/NavBar";
 import NotFound from "./pages/notFound.jsx";
@@ -49,19 +49,21 @@ function App() {
       {showNavBar && <NavBar />}
 
       {/* Main Page */}
-      <Routes>
-        <Route index path="/" element={<LandingPage onShowNavBar={handleShowNavBar} />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="App__main-page-content">
+        <Routes>
+          <Route index path="/" element={<LandingPage onShowNavBar={handleShowNavBar} />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/projects" element={<Projects />} />
+          {/* <Route path="/resume" element={<Resume />} /> */}
+          <Route path="/skills" element={<Skills />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
 
       {/* Footer */}
-      {showFooter && <Footer />}
+      <div className="App__footer">{showFooter && <Footer />}</div>
     </div>
   );
 }

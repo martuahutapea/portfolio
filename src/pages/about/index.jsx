@@ -7,7 +7,7 @@ import "./styles.scss";
 const About = () => {
   return (
     <section id="about" className="about">
-      <Header headerText="About Me" icon={<BsInfoCircle size={40} />} />
+      <Header headerText="About Me" ic on={<BsInfoCircle size={40} />} />
       <div className="about-container">
         <div className="about-image">
           <img src={profileImage} alt="About" />

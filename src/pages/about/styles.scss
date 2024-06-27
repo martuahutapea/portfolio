@@ -2,14 +2,15 @@ $primary-color: #4caf50;
 $secondary-color: #ffffff;
 $background-color: #f4f4f4;
 $text-color: #333;
-$font-family: "Arial, sans-serif";
+// $font-family: "Arial, sans-serif";
 
 .about-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 50px;
+  padding: 100px;
   background-color: $background-color;
+  height: 100%;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -26,6 +27,7 @@ $font-family: "Arial, sans-serif";
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    border-radius: 50%;
 
     &:hover {
       transform: scale(1.05);
@@ -38,19 +40,27 @@ $font-family: "Arial, sans-serif";
   }
 }
 
+.imageCaption {
+  font-size: 18px;
+  color: $text-color;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
 .about-description {
   flex: 2;
   padding: 20px;
 
   h2 {
     margin-bottom: 20px;
-    font-family: $font-family;
-    color: $primary-color;
+    font-family: Roboto, Verdana;
+    color: $text-color;
   }
 
   p {
     margin-bottom: 15px;
-    font-family: $font-family;
+    font-family: Roboto, Verdana;
     color: $text-color;
     line-height: 1.6;
   }

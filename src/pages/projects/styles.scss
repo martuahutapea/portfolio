@@ -19,7 +19,7 @@ $font-family: "Arial, sans-serif";
   h2 {
     margin-bottom: 20px;
     font-family: $font-family;
-    color: $primary-color;
+    color: var(--text-color-option-1);
   }
 
   .projects-cards {

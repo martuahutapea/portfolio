@@ -13,7 +13,7 @@ const Home = ({ name }) => {
     <section id="home" className="home">
       <div className="home_text-wrapper">
         <h1>
-          Hi, {name}!
+          {/* Hi, {name}! */}
           <br />
           Welcome to my portfolio
         </h1>

@@ -2,10 +2,9 @@ $primary-color: #4caf50;
 $secondary-color: #ffffff;
 $background-color: #f4f4f4;
 $text-color: #333;
-$font-family: "Arial, sans-serif";
 
 .skills-container {
-  padding: 50px;
+  padding: 50px 250px;
   background-color: $background-color;
 
   @media (max-width: 768px) {
@@ -18,8 +17,8 @@ $font-family: "Arial, sans-serif";
 
   h2 {
     margin-bottom: 20px;
-    font-family: $font-family;
-    color: $primary-color;
+    font-family: Roboto, Arial;
+    color: $text-color;
   }
 
   .skills-list {
@@ -31,13 +30,13 @@ $font-family: "Arial, sans-serif";
       margin-bottom: 10px;
       padding: 10px;
       border-radius: 4px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      font-family: $font-family;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      font-family: Roboto, Arial;
       color: $text-color;
       transition: background-color 0.3s;
 
       &:hover {
-        background-color: lighten($secondary-color, 10%);
+        background-color: var(--text-color-option-1);
       }
     }
   }

@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../../components/Header";
+import profileImage from "../../assets/profile.jpg";
 import { BsInfoCircle } from "react-icons/bs";
 import "./styles.scss";
 
@@ -9,15 +10,27 @@ const About = () => {
       <Header headerText="About Me" icon={<BsInfoCircle size={40} />} />
       <div className="about-container">
         <div className="about-image">
-          <img src="path_to_your_image.jpg" alt="About" />
+          <img src={profileImage} alt="About" />
+          <p className="imageCaption">
+            Web Developer || Front-end Developer
+            <br />
+            Martua Ibrahim Hutapea
+          </p>
         </div>
         <div className="about-description">
           <h2>About Me</h2>
           <p>
-            Hello! I'm John Doe, a passionate web developer with a knack for creating dynamic and responsive web applications. With over 5 years of experience in the industry, I have honed my skills in various web technologies and
-            frameworks. I love tackling new challenges and continuously learning to stay updated with the latest trends in web development.
+            I am a recent IT graduate from Asia Pacific International University in Thailand, with a strong focus on front-end and back-end development, software engineering, and database management. Throughout my academic journey, I have
+            developed a robust skill set in creating efficient and user-friendly web applications. My experience includes working on various projects that have honed my ability to deliver high-quality solutions within stipulated timelines.
           </p>
-          <p>In my free time, I enjoy exploring nature, photography, and working on open-source projects. I'm always eager to collaborate with like-minded individuals and contribute to the tech community.</p>
+          <p>
+            I am highly motivated and results-oriented, driven by a passion for technology and innovation. My commitment to continuous learning and skill improvement ensures that I stay updated with the latest industry trends and
+            advancements. I thrive in collaborative environments and am eager to contribute to team success with my technical expertise.
+          </p>
+          <p>
+            Currently, I am seeking a software engineer position where I can leverage my technical skills, creativity, and enthusiasm for technology to make a meaningful impact. I am excited about the opportunity to work with a dynamic team
+            and contribute to the development of cutting-edge solutions.
+          </p>
         </div>
       </div>
     </section>

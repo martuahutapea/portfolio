@@ -1,6 +1,11 @@
+$primary-color: #4caf50;
+$secondary-color: #ffffff;
+$background-color: #f4f4f4;
+$text-color: #333;
+
 .home {
   position: relative;
-  height: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +38,32 @@
       cursor: pointer;
       padding: 10px 70px;
       font-size: 2rem;
-      background: transparent;
+      background-color: #f7a800;
       color: #000;
       border: 1.5px solid var(--text-color-option-1);
       border-radius: 4px;
       font-weight: 500;
+      margin: 0 10px; // Add margin to separate buttons
 
       &:hover {
-        background: var(--text-color-option-1);
+        background-color: darken(#f7a800, 10%);
+        color: #fff;
+      }
+    }
+
+    .download-button {
+      cursor: pointer;
+      padding: 10px 70px;
+      font-size: 2rem;
+      background-color: #f7a800;
+      color: #000;
+      border: 1.5px solid var(--text-color-option-1);
+      border-radius: 4px;
+      font-weight: 500;
+      margin: 0 10px; //
+
+      &:hover {
+        background-color: darken(#f7a800, 10%);
         color: #fff;
       }
     }

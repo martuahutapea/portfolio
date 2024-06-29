@@ -1,21 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.01a0f5b4.css",
-    "main.js": "/portfolio/static/js/main.43ce4078.js",
-    "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
-    "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
-    "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
-    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
-    "static/media/fa-regular-400.ttf": "/portfolio/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
-    "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
-    "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
-    "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
-    "index.html": "/portfolio/index.html",
-    "main.01a0f5b4.css.map": "/portfolio/static/css/main.01a0f5b4.css.map",
-    "main.43ce4078.js.map": "/portfolio/static/js/main.43ce4078.js.map"
+    "main.css": "/static/css/main.b65b24a1.css",
+    "main.js": "/static/js/main.743b4b17.js",
+    "static/media/fa-solid-900.ttf": "/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/wedding.jpg": "/static/media/wedding.525d89941ba08bfd103a.jpg",
+    "static/media/fa-brands-400.ttf": "/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/Martua-Hutapea-resume.pdf": "/static/media/Martua-Hutapea-resume.714f3b06231854d48093.pdf",
+    "static/media/e-commerce.jpg": "/static/media/e-commerce.a48c4bf83078a01d9a2f.jpg",
+    "static/media/fa-solid-900.woff2": "/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/palm_oil.jpg": "/static/media/palm_oil.6833f54495d4eb252290.jpg",
+    "static/media/dms.jpg": "/static/media/dms.3bbc54c016aa30abf65b.jpg",
+    "static/media/blog.jpg": "/static/media/blog.b5068ed2eb140a9dec50.jpg",
+    "static/media/fa-brands-400.woff2": "/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/profile.jpg": "/static/media/profile.32cbe1b4b4e6a7c34f24.jpg",
+    "static/media/cyber_security.jpg": "/static/media/cyber_security.ea8e6577fddeca039a6c.jpg",
+    "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/fa-regular-400.woff2": "/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/Weather App.jpg": "/static/media/Weather App.3afe81fa93c14a987814.jpg",
+    "static/media/fa-v4compatibility.ttf": "/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/index.html",
+    "main.b65b24a1.css.map": "/static/css/main.b65b24a1.css.map",
+    "main.743b4b17.js.map": "/static/js/main.743b4b17.js.map"
   },
   "entrypoints": [
-    "static/css/main.01a0f5b4.css",
-    "static/js/main.43ce4078.js"
+    "static/css/main.b65b24a1.css",
+    "static/js/main.743b4b17.js"
   ]
 }

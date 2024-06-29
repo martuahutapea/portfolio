@@ -1,23 +1,33 @@
 import React from "react";
 import { FaProjectDiagram } from "react-icons/fa";
 import Header from "../../components/Header";
+import { FaGithub } from "react-icons/fa";
 import "./styles.scss";
+import PalmOil from "../../assets/palm_oil.jpg";
+import Ecommerce from "../../assets/e-commerce.jpg";
+import CyberSecurity from "../../assets/cyber_security.jpg";
+import Dms from "../../assets/dms.jpg";
+import Bms from "../../assets/blog.jpg";
+// import Youtube from "../../assets/youtube.jpg ";
+// import Portfolio from "../../assets/";
+import Wedding from "../../assets/wedding.jpg";
+import Weather from "../../assets/Weather App.jpg";
 
 const projectsData = [
   {
-    image: "path_to_image1.jpg",
+    image: PalmOil,
     description: "Palm Oil Management System",
     tech: "PHP, Laravel, MongoDB",
     link: "#",
   },
   {
-    image: "path_to_image2.jpg",
+    image: Ecommerce,
     description: "E-commerce",
     tech: "HTML, CSS",
     link: "#",
   },
   {
-    image: "path_to_image3.jpg",
+    image: CyberSecurity,
     description: "Cyber Security",
     tech: "Python",
     link: "#",
@@ -26,19 +36,19 @@ const projectsData = [
 
 const presentProjectsData = [
   {
-    image: "path_to_image4.jpg",
+    image: Dms,
     description: "Dormitory Management System",
     tech: "PHP, JavaScript, jQuery, Bootstrap, MySQL",
     link: "#",
   },
   {
-    image: "path_to_image5.jpg",
+    image: Bms,
     description: "Blog Management System",
     tech: "PHP, JavaScript, MySQL",
     link: "#",
   },
   {
-    image: "path_to_image6.jpg",
+    image: "",
     description: "Clone Youtube UI",
     tech: "HTML, CSS",
     link: "#",
@@ -50,13 +60,13 @@ const presentProjectsData = [
     link: "#",
   },
   {
-    image: "path_to_image8.jpg",
+    image: Wedding,
     description: "Wedding Invitation",
     tech: "React.js, scss, Javascript",
     link: "#",
   },
   {
-    image: "path_to_image9.jpg",
+    image: Weather,
     description: "Wheather Mobile App",
     tech: "Ionic, jQuery, Firebase",
     link: "#",
@@ -69,7 +79,7 @@ const ProjectCard = ({ project }) => (
     <p>{project.description}</p>
     <p>{project.tech}</p>
     <a href={project.link} className="project-button">
-      View Project
+      View <FaGithub />
     </a>
   </div>
 );

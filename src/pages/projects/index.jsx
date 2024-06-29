@@ -2,6 +2,7 @@ import React from "react";
 import { FaProjectDiagram } from "react-icons/fa";
 import Header from "../../components/Header";
 import { FaGithub } from "react-icons/fa";
+import { TbArrowUpRight } from "react-icons/tb";
 import "./styles.scss";
 import PalmOil from "../../assets/palm_oil.jpg";
 import Ecommerce from "../../assets/e-commerce.jpg";
@@ -79,7 +80,7 @@ const ProjectCard = ({ project }) => (
     <p>{project.description}</p>
     <p>{project.tech}</p>
     <a href={project.link} className="project-button">
-      View <FaGithub />
+      View <FaGithub /> <TbArrowUpRight />
     </a>
   </div>
 );

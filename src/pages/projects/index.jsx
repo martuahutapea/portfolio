@@ -8,10 +8,10 @@ import Ecommerce from "../../assets/e-commerce.jpg";
 import CyberSecurity from "../../assets/cyber_security.jpg";
 import Dms from "../../assets/dms.jpg";
 import Bms from "../../assets/blog.jpg";
-// import Youtube from "../../assets/youtube.jpg ";
-// import Portfolio from "../../assets/";
+import Youtube from "../../assets/youtubeUI.jpg";
+import Portfolio from "../../assets/portfolio.jpg";
 import Wedding from "../../assets/wedding.jpg";
-import Weather from "../../assets/Weather App.jpg";
+import Weather from "../../assets/weather.jpg";
 
 const projectsData = [
   {
@@ -23,7 +23,7 @@ const projectsData = [
   {
     image: Ecommerce,
     description: "E-commerce",
-    tech: "HTML, CSS",
+    tech: "Node.js, React.js, Firebase",
     link: "#",
   },
   {
@@ -48,13 +48,13 @@ const presentProjectsData = [
     link: "#",
   },
   {
-    image: "",
+    image: Youtube,
     description: "Clone Youtube UI",
     tech: "HTML, CSS",
     link: "#",
   },
   {
-    image: "path_to_image7.jpg",
+    image: Portfolio,
     description: "Portfolio",
     tech: "React.js, scss, Javascript",
     link: "#",

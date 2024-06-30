@@ -40,13 +40,13 @@ const presentProjectsData = [
     image: Dms,
     description: "Dormitory Management System",
     tech: "PHP, JavaScript, jQuery, Bootstrap, MySQL",
-    link: "#",
+    link: "https://github.com/martuahutapea/dms.git",
   },
   {
     image: Bms,
     description: "Blog Management System",
     tech: "PHP, JavaScript, MySQL",
-    link: "#",
+    link: "https://github.com/martuahutapea/blog.git",
   },
   {
     image: Youtube,
@@ -58,7 +58,7 @@ const presentProjectsData = [
     image: Portfolio,
     description: "Portfolio",
     tech: "React.js, scss, Javascript",
-    link: "#",
+    link: "https://github.com/martuahutapea/portfolio.git",
   },
   {
     image: Wedding,
@@ -79,7 +79,7 @@ const ProjectCard = ({ project }) => (
     <img src={project.image} alt="Project" />
     <p>{project.description}</p>
     <p>{project.tech}</p>
-    <a href={project.link} className="project-button">
+    <a href={project.link} className="project-button" target="_blank">
       View <FaGithub /> <TbArrowUpRight />
     </a>
   </div>

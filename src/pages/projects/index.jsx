@@ -39,20 +39,20 @@ const presentProjectsData = [
   {
     image: Dms,
     description: "Dormitory Management System",
-    tech: "PHP, JavaScript, jQuery, Bootstrap, MySQL",
+    tech: "PHP, JavaScript, Ajax, Bootstrap, MySQL",
     link: "https://github.com/martuahutapea/dms.git",
   },
   {
     image: Bms,
     description: "Blog Management System",
-    tech: "PHP, JavaScript, MySQL",
+    tech: "PHP, JavaScript, MySQL, jQuery",
     link: "https://github.com/martuahutapea/blog.git",
   },
   {
     image: Youtube,
     description: "Clone Youtube UI",
     tech: "HTML, CSS",
-    link: "#",
+    link: "https://github.com/martuahutapea/youtube.git",
   },
   {
     image: Portfolio,
@@ -64,7 +64,7 @@ const presentProjectsData = [
     image: Wedding,
     description: "Wedding Invitation",
     tech: "React.js, scss, Javascript",
-    link: "#",
+    link: "https://github.com/martuahutapea/wedding.git",
   },
   {
     image: Weather,

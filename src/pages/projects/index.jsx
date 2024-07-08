@@ -19,19 +19,19 @@ const projectsData = [
     image: PalmOil,
     description: "Palm Oil Management System",
     tech: "PHP, Laravel, MongoDB",
-    link: "#",
+    link: "https://github.com/martuahutapea/palmOil.git",
   },
   {
     image: Ecommerce,
     description: "E-commerce",
     tech: "Node.js, React.js, Firebase",
-    link: "#",
+    link: "https://github.com/martuahutapea/e-commerce.git",
   },
   {
     image: CyberSecurity,
     description: "Cyber Security",
     tech: "Python",
-    link: "#",
+    link: "https://github.com/martuahutapea/cyberSecurity.git",
   },
 ];
 
@@ -80,7 +80,8 @@ const ProjectCard = ({ project }) => (
     <p>{project.description}</p>
     <p>{project.tech}</p>
     <a href={project.link} className="project-button" target="_blank">
-      View <FaGithub /> <TbArrowUpRight />
+      <FaGithub /> Source
+      <TbArrowUpRight />
     </a>
   </div>
 );
@@ -92,7 +93,7 @@ const Projects = () => {
 
       <div className="projects-container">
         <section className="projects-section">
-          <h2>Present Projects</h2>
+          <h2>Present Projects (Processing)</h2>
           <div className="projects-cards">
             {projectsData.map((project, index) => (
               <ProjectCard key={index} project={project} />
@@ -100,7 +101,7 @@ const Projects = () => {
           </div>
         </section>
         <section className="projects-section">
-          <h2>Past Projects</h2>
+          <h2>Past Projects (Completed) </h2>
           <div className="projects-cards">
             {presentProjectsData.map((project, index) => (
               <ProjectCard key={index} project={project} />

@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 import "./styles.scss";
 
 const skillsData = {
-  frontEnd: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap"],
+  frontEnd: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Ajax", "jQuery"],
   backEnd: ["PHP", "Laravel", "Python"],
   database: ["MySQL", "MongoDB"],
   others: ["Git", "GitHub", "Docker"],

@@ -47,7 +47,7 @@ const NavBar = () => {
             <FaReact size={40} />
           </Link>
         </div>
-        <ul className={`navbar__menu ${toggleIcon ? "active" : ""}`}>
+        <ul className={`navbar__menu ${toggleIcon ? "active" : ""} `}>
           {data.map((item, key) => (
             <li key={key} className="navbar__menu__item">
               <Link className="navbar__menu__item__links" to={item.to}>

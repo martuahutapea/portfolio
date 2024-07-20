@@ -63,6 +63,8 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      {/* <h1>For more Social media</h1>
+      <a href="https://bento.me/mihh">Here</a> */}
 
       <div className="map-container">
         {/* <h3>Location</h3> */}

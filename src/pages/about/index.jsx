@@ -12,24 +12,29 @@ const About = () => {
         <div className="about-image">
           <img src={profileImage} alt="About" />
           <p className="imageCaption">
-            Web Developer || Front-end Developer
+            Full Stack Developer
             <br />
             Martua Ibrahim Hutapea
           </p>
         </div>
         <div className="about-description">
           <h2>About Me</h2>
+
           <p>
-            I am a recent IT graduate from Asia Pacific International University in Thailand, with a strong focus on front-end and back-end development, software engineering, and database management. Throughout my academic journey, I have
-            developed a robust skill set in creating efficient and user-friendly web applications. My experience includes working on various projects that have honed my ability to deliver high-quality solutions within stipulated timelines.
+            Hello &#128075;, I'm Martua Hutapea, a dedicated software engineer passionate about both front-end and back-end development. I thrive on solving complex problems and turning ideas into reality through code. My journey in tech
+            has been driven by curiosity and a desire to create impactful solutions. From the moment I wrote my first line of code, I knew this was the path I wanted to pursue.
           </p>
           <p>
-            I am highly motivated and results-oriented, driven by a passion for technology and innovation. My commitment to continuous learning and skill improvement ensures that I stay updated with the latest industry trends and
-            advancements. I thrive in collaborative environments and am eager to contribute to team success with my technical expertise.
+            Coding has been my best friend since 2019, helping me push beyond my limits to create innovative solutions that make a positive impact on the world. Each project I undertake is a new opportunity to learn, grow, and bring fresh
+            ideas to life. I believe that technology has the power to transform lives, and I am committed to leveraging my skills to contribute to this transformation.
           </p>
           <p>
-            Currently, I am seeking a software engineer position where I can leverage my technical skills, creativity, and enthusiasm for technology to make a meaningful impact. I am excited about the opportunity to work with a dynamic team
-            and contribute to the development of cutting-edge solutions.
+            I am excited to put all my skills to use in building new technologies that can reach people worldwide. The endless possibilities of technology inspire me to keep pushing the boundaries of what's possible. Whether it's developing
+            a new application or exploring emerging technologies, I am always eager to take on new challenges and create meaningful solutions.
+          </p>
+          <p>
+            Let's connect all the people with technology! Together, we can create a more connected and technologically advanced world. By bridging the gap between people and technology, we can drive innovation and make a lasting impact on
+            our society.
           </p>
         </div>
       </div>

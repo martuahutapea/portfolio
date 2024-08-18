@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Animate } from "react-simple-animate";
 import { IoMdDownload } from "react-icons/io";
-import Resume from "../../assets/Martua-Hutapea-resume.pdf";
+import Resume from "../../assets/MartuaHutapea_resume.pdf";
+import ProfilePicture from "../../assets/avatar.png";
 
 import "./styles.scss";
 
@@ -14,37 +14,32 @@ const Home = ({ name }) => {
   };
 
   const handleDownloadPDF = () => {
-    // This function should handle the download logic
     const link = document.createElement("a");
-    link.href = Resume; // Update with the actual path to your PDF file
-    link.download = "martuaresume.pdf";
+    link.href = Resume;
+    link.download = "Martua-Hutapea-Resume.pdf";
     link.click();
   };
 
   return (
-    <section id="home" className="home">
-      <div className="home_text-wrapper">
-        <h1>Welcome to my portfolio</h1>
-      </div>
-
-      <Animate
-        play
-        duration={1.5}
-        delay={1}
-        start={{
-          transform: "translateY(55px)",
-        }}
-        end={{
-          transform: "translateX(0px)",
-        }}
-      >
-        <div className="home__contact-me">
-          <button onClick={handleNavigateToContactMePage}>Hire Me</button>
-          <button onClick={handleDownloadPDF} className="download-button">
+    <section className="home">
+      <div className="home__content">
+        <h1 className="home__title">Full-Stack Developer</h1>
+        <p className="home__description">
+          Welcome, I'm {name}. A passionate Full-Stack Developer based in Indonesia! <br />
+          Explore more and let's get cracking!
+        </p>
+        <div className="home__buttons">
+          <button onClick={handleNavigateToContactMePage} className="home__button">
+            Hire Me
+          </button>
+          <button onClick={handleDownloadPDF} className="home__button">
             Resume <IoMdDownload />
           </button>
         </div>
-      </Animate>
+      </div>
+      <div className="home__image-container">
+        <img src={ProfilePicture} alt="Profile" className="home__image" />
+      </div>
     </section>
   );
 };

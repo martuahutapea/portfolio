@@ -4,10 +4,11 @@ import Header from "../../components/Header";
 import "./styles.scss";
 
 const skillsData = {
-  frontEnd: ["HTML", "CSS", "JavaScript", "React.js", "Bootstrap", "Ajax", "jQuery"],
-  backEnd: ["PHP", "Laravel", "Python"],
-  database: ["MySQL", "MongoDB"],
-  others: ["Git", "GitHub", "Docker"],
+  languages: ["PHP", "JavaScript", "Go", "NodeJs", "Python", "SQL"],
+  frameworkLibraries: ["Laravel", "React.js", "Ionic", "Bootstrap", "Ajax", "jQuery"],
+  database: ["MySQL", "MongoDB", "Postgre"],
+  networking: ["Firewall", "DHCP", "IP", "Firewall", "Subnet"],
+  others: ["Git", "GitHub", "Docker", "AWS", "Azure"],
 };
 
 const SkillsSection = ({ title, skills }) => (
@@ -29,9 +30,10 @@ const Skills = () => {
       <Header headerText="Skills & Tech" icon={<GiSkills size={40} />} />
 
       <div className="skills-container">
-        <SkillsSection title="Front-End" skills={skillsData.frontEnd} />
-        <SkillsSection title="Back-End" skills={skillsData.backEnd} />
+        <SkillsSection title="Languages" skills={skillsData.languages} />
+        <SkillsSection title="Framework & Libraries" skills={skillsData.frameworkLibraries} />
         <SkillsSection title="Database" skills={skillsData.database} />
+        <SkillsSection title="Networking" skills={skillsData.networking} />
         <SkillsSection title="Others" skills={skillsData.others} />
       </div>
     </section>

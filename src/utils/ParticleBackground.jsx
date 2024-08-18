@@ -42,7 +42,7 @@ const ParticlesBackground = () => {
               quantity: 2,
             },
             repulse: {
-              distance: 80,
+              distance: 5,
               duration: 0.12,
             },
           },
@@ -53,10 +53,10 @@ const ParticlesBackground = () => {
           },
           links: {
             color: "#A01717",
-            distance: 200,
+            distance: 160,
             enable: true,
-            opacity: 5,
-            width: 2,
+            opacity: 3,
+            width: 1.5,
           },
           collisions: {
             enable: true,

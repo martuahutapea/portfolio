@@ -21,20 +21,17 @@ const About = () => {
           <h2>About Me</h2>
 
           <p>
-            Hello &#128075;, I'm Martua Hutapea, a dedicated software engineer passionate about both front-end and back-end development. I thrive on solving complex problems and turning ideas into reality through code. My journey in tech
-            has been driven by curiosity and a desire to create impactful solutions. From the moment I wrote my first line of code, I knew this was the path I wanted to pursue.
+            Hi there! &#128075; I'm Martua Hutapea, a Full Stack Developer from Indonesia with a love for technology. I thrive on building efficient and user-friendly web applications. My studies at Asia Pacific International University in
+            Thailand have given me a solid grounding in front-end and back-end development, software engineering, and database management, allowing me to tackle complex challenges with innovative solutions. I'm also passionate about staying
+            ahead of tech trends to continually refine and expand my skill set.
           </p>
           <p>
-            Coding has been my best friend since 2019, helping me push beyond my limits to create innovative solutions that make a positive impact on the world. Each project I undertake is a new opportunity to learn, grow, and bring fresh
-            ideas to life. I believe that technology has the power to transform lives, and I am committed to leveraging my skills to contribute to this transformation.
+            Since 2019, I’ve been immersed in coding, driven by the belief that technology can transform lives and simplify everyday tasks. What started as a curiosity about how things work has grown into a deep passion for development.
+            Through continuous learning and hands-on projects, I stay updated with the latest industry trends and best practices. I enjoy collaborating on projects that push the boundaries of what’s possible and create real-world impact.
           </p>
           <p>
-            I am excited to put all my skills to use in building new technologies that can reach people worldwide. The endless possibilities of technology inspire me to keep pushing the boundaries of what's possible. Whether it's developing
-            a new application or exploring emerging technologies, I am always eager to take on new challenges and create meaningful solutions.
-          </p>
-          <p>
-            Let's connect all the people with technology! Together, we can create a more connected and technologically advanced world. By bridging the gap between people and technology, we can drive innovation and make a lasting impact on
-            our society.
+            I’m eager to connect people with technology through creative and impactful software solutions. Whether it’s developing cutting-edge web applications or optimizing existing systems, my goal is to make technology accessible and
+            beneficial. I'm excited about new opportunities and challenges that drive innovation and collaboration. Let's build something amazing together and make a difference through technology. magicUI
           </p>
         </div>
       </div>

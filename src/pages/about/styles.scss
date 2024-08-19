@@ -21,9 +21,10 @@ $text-color: #333;
 .about-image {
   flex: 1;
   padding: 20px;
+  max-width: 40%;
 
   img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -47,6 +48,15 @@ $text-color: #333;
   text-align: center;
   font-weight: bold;
 }
+@media (min-width: 360px) and (max-width: 480px) {
+  .about-image {
+    max-width: 70%;
+  }
+  .imageCaption {
+    font-size: 0.8rem;
+    min-width: 100%;
+  }
+}
 
 .about-description {
   flex: 2;
@@ -64,7 +74,14 @@ $text-color: #333;
     color: $text-color;
     line-height: 1.6;
   }
-
+  @media (min-width: 360px) and (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
   @media (max-width: 768px) {
     padding: 0;
   }

@@ -75,12 +75,13 @@
 
 @media (max-width: 480px) {
   .landing-title {
-    font-size: 1.4rem; /* Smaller font size for mobile devices */
-    padding: 10px;
+    font-size: 1.2rem; /* Smaller font size for mobile devices */
+    padding: 20px;
   }
 
   .landing-form {
     top: 70%; /* Adjust position for better alignment on mobile screens */
+    margin: 10px;
   }
 
   .landing-input,

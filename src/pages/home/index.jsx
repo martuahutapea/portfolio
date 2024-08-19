@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { IoMdDownload } from "react-icons/io";
 import Resume from "../../assets/MartuaHutapea_resume.pdf";
 import ProfilePicture from "../../assets/avatar.png";
-
 import "./styles.scss";
 
 const Home = ({ name }) => {
@@ -20,10 +19,19 @@ const Home = ({ name }) => {
     link.click();
   };
 
+  const title = "Full-Stack Developer";
+  const titleArray = title.split("");
+
   return (
     <section className="home">
       <div className="home__content">
-        <h1 className="home__title">Full-Stack Developer</h1>
+        <h1 className="falling-text">
+          {titleArray.map((char, index) => (
+            <span key={index} style={{ "--char-index": index }}>
+              {char}
+            </span>
+          ))}
+        </h1>
         <p className="home__description">
           Welcome, I'm {name}. A passionate Full-Stack Developer based in Indonesia! <br />
           Explore more and let's get cracking!

@@ -1,24 +1,27 @@
-$primary-color: #4caf50;
-$secondary-color: #ffffff;
-$background-color: #f4f4f4;
 $text-color: #333;
 
-@keyframes borderAnimation {
+@keyframes falling {
   0% {
-    border-color: #333;
-  }
-  25% {
-    border-color: #b60707;
-  }
-  50% {
-    border-color: $secondary-color;
-  }
-  75% {
-    border-color: #f7a800;
+    opacity: 0;
+    transform: translateY(-50px);
   }
   100% {
-    border-color: #333;
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+.falling-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.falling-text span {
+  display: inline-block;
+  opacity: 0;
+  animation: falling 0.5s forwards;
+  animation-delay: calc(var(--char-index) * 0.1s);
 }
 
 .home {
@@ -33,9 +36,9 @@ $text-color: #333;
     flex: 1;
     padding: 2rem;
 
-    .home__title {
+    .falling-text {
       font-size: 1rem;
-      color: $text-color;
+      color: #000;
       margin: 0;
     }
 
@@ -94,7 +97,7 @@ $text-color: #333;
 @media (min-width: 551px) and (max-width: 768px) {
   .home {
     &__content {
-      .home__title {
+      .falling-text {
         font-size: 2rem;
       }
 
@@ -124,12 +127,12 @@ $text-color: #333;
 @media (min-width: 769px) and (max-width: 990px) {
   .home {
     &__content {
-      .home__title {
+      .falling-text {
         font-size: 3rem;
       }
 
       .home__description {
-        font-size: 1.3rem;
+        font-size: 5rem;
         max-width: 70%;
       }
 
@@ -160,7 +163,7 @@ $text-color: #333;
     margin-top: 2rem;
 
     &__content {
-      .home__title {
+      .falling-text {
         font-size: 4rem;
       }
 

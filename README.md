@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-Check out the my-portfolio: [View Demo]([https://itsmihh-palmoil.netlify.app/](https://martuahutapea.github.io/portfolio/))
+Check out the my-portfolio: [View Demo](https://martuahutapea.github.io/portfolio/)
 
 ## Technologies Used
 
